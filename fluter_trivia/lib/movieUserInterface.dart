@@ -38,7 +38,6 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
       color: Colors.grey.shade800,
       child: Column(
         children: <Widget>[
-
           new Container(
             height: 20.0,
             width: MediaQuery.of(context).size.width,
@@ -50,7 +49,6 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
                   color: Colors.white, fontSize: 14.0, fontFamily: 'Oswald'),
             ),
           ),
-
           new Container(
             height: 120.0,
             margin: const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
@@ -61,7 +59,7 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
                 new Stack(
                   children: <Widget>[
                     Image.asset(
-                      "images/dunkirk_movie_poster.jpg",
+                      "images/limitless_poster.jpg",
                       width: 180.0,
                       height: 120.0,
                       fit: BoxFit.fill,
@@ -90,8 +88,9 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
                 new Stack(
                   children: <Widget>[
                     Image.asset(
-                      "images/Venom_poster.png",
+                      "images/dunkirk_movie_poster.jpg",
                       width: 180.0,
+                      height: 120.0,
                       fit: BoxFit.fill,
                     ),
                     Stack(
@@ -121,7 +120,7 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
                 new Stack(
                   children: <Widget>[
                     Image.asset(
-                      "images/limitless_poster.jpg",
+                      "images/Venom_poster.png",
                       width: 180.0,
                       height: 120.0,
                       fit: BoxFit.fill,
@@ -151,8 +150,25 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
                 ),
               ],
             ),
+          ),
+          new Container(
+            height: 20.0,
+            width: MediaQuery.of(context).size.width,
+            margin: const EdgeInsets.only(top: 16.0, left: 8.0),
+            child: new Text(
+              "Recommended",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+                  color: Colors.white, fontSize: 14.0, fontFamily: 'Oswald'),
+            ),
+          ),
+
+          new Container(
+            height: 120.0,
+            margin: EdgeInsets.only(left: 8.0,right: 8.0,top: 8.0),
           )
         ],
+
       ),
     );
   }
