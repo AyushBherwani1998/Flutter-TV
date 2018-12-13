@@ -177,7 +177,10 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
               ],
             ),
           ),
-          Divider(color: Colors.grey,indent: 8.0,),
+          Divider(
+            color: Colors.grey,
+            indent: 8.0,
+          ),
           new Container(
             height: 20.0,
             width: MediaQuery.of(context).size.width,
@@ -291,9 +294,278 @@ class MyMovieUserInterface extends State<MovieUserInterface> {
               ],
             ),
           ),
-
-          Divider(color: Colors.grey,indent: 8.0,),
-          Container()
+          Divider(
+            color: Colors.grey,
+            indent: 8.0,
+          ),
+          Row(
+            children: <Widget>[
+              new Container(
+                alignment: Alignment(-1.0, -1.0),
+                margin: const EdgeInsets.only(left: 8.0),
+                child: new Text(
+                  "Latest English",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontFamily: 'Oswald'),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(right: 8.0),
+                  alignment: Alignment(1.0, -1.0),
+                  child: Text(
+                    "See More",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontFamily: 'Oswald',
+                        fontSize: 10.0),
+                  ),
+                ),
+              )
+            ],
+          ),
+          new Container(
+            height: 120.0,
+            margin: EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+            child: new ListView(
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                new Stack(
+                  children: <Widget>[
+                    Image.asset(
+                      "images/Incredibles2_poster.jpg",
+                      width: 180.0,
+                      height: 120.0,
+                      fit: BoxFit.fill,
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          width: 180.0,
+                          margin: EdgeInsets.only(top: 100.0),
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                        GestureDetector(
+                          onTap: _starIconPressedR,
+                          child: Container(
+                            padding: EdgeInsets.all(1.0),
+                            margin: EdgeInsets.only(left: 156.0, top: 98.0),
+                            child: _starIconR,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                new Padding(padding: EdgeInsets.only(left: 8.0)),
+                new Stack(
+                  children: <Widget>[
+                    Image.asset(
+                      "images/antman_poster.jpg",
+                      width: 180.0,
+                      height: 120.0,
+                      fit: BoxFit.fill,
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          width: 180.0,
+                          margin: EdgeInsets.only(top: 100.0),
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                        GestureDetector(
+                          child: Container(
+                            padding: EdgeInsets.all(1.0),
+                            margin: EdgeInsets.only(left: 156.0, top: 99.0),
+                            child: Icon(
+                              Icons.star_border,
+                              color: Colors.white,
+                              size: 20.0,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                new Padding(padding: EdgeInsets.only(left: 8.0)),
+                new Stack(
+                  children: <Widget>[
+                    Image.asset(
+                      "images/spiderman_poster.jpg",
+                      width: 180.0,
+                      height: 120.0,
+                      fit: BoxFit.fill,
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          width: 180.0,
+                          margin: EdgeInsets.only(top: 100.0),
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                        GestureDetector(
+                          child: Container(
+                            padding: EdgeInsets.all(1.0),
+                            margin: EdgeInsets.only(left: 156.0, top: 99.0),
+                            child: Icon(
+                              Icons.star_border,
+                              color: Colors.white,
+                              size: 20.0,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Divider(
+            color: Colors.grey,
+            indent: 8.0,
+          ),
+          Row(
+            children: <Widget>[
+              new Container(
+                alignment: Alignment(-1.0, -1.0),
+                margin: const EdgeInsets.only(left: 8.0),
+                child: new Text(
+                  "Latest Hindi",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontFamily: 'Oswald'),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(right: 8.0),
+                  alignment: Alignment(1.0, -1.0),
+                  child: Text(
+                    "See More",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontFamily: 'Oswald',
+                        fontSize: 10.0),
+                  ),
+                ),
+              )
+            ],
+          ),
+          new Container(
+            height: 120.0,
+            margin: EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+            child: new ListView(
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                new Stack(
+                  children: <Widget>[
+                    Image.asset(
+                      "images/razi_poster.jpg",
+                      width: 180.0,
+                      height: 120.0,
+                      fit: BoxFit.fill,
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          width: 180.0,
+                          margin: EdgeInsets.only(top: 100.0),
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                        GestureDetector(
+                          onTap: _starIconPressedR,
+                          child: Container(
+                            padding: EdgeInsets.all(1.0),
+                            margin: EdgeInsets.only(left: 156.0, top: 98.0),
+                            child: _starIconR,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                new Padding(padding: EdgeInsets.only(left: 8.0)),
+                new Stack(
+                  children: <Widget>[
+                    Image.asset(
+                      "images/robot_poster.jpg",
+                      width: 180.0,
+                      height: 120.0,
+                      fit: BoxFit.fill,
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          width: 180.0,
+                          margin: EdgeInsets.only(top: 100.0),
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                        GestureDetector(
+                          child: Container(
+                            padding: EdgeInsets.all(1.0),
+                            margin: EdgeInsets.only(left: 156.0, top: 99.0),
+                            child: Icon(
+                              Icons.star_border,
+                              color: Colors.white,
+                              size: 20.0,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                new Padding(padding: EdgeInsets.only(left: 8.0)),
+                new Stack(
+                  children: <Widget>[
+                    Image.asset(
+                      "images/mulk_poster.jpg",
+                      width: 180.0,
+                      height: 120.0,
+                      fit: BoxFit.fill,
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          width: 180.0,
+                          margin: EdgeInsets.only(top: 100.0),
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                        GestureDetector(
+                          child: Container(
+                            padding: EdgeInsets.all(1.0),
+                            margin: EdgeInsets.only(left: 156.0, top: 99.0),
+                            child: Icon(
+                              Icons.star_border,
+                              color: Colors.white,
+                              size: 20.0,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

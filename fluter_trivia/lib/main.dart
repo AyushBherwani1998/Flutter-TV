@@ -87,8 +87,8 @@ class MyUserInterface extends State<UserInterface> {
       //FloatingActionButton
       floatingActionButton: FloatingActionButton(
           child: Icon(
-            Icons.favorite,
-            color: Colors.red.shade800,
+            Icons.star,
+            color: Colors.yellow.shade600,
             size: 30.0,
           ),
           backgroundColor: Colors.white,
