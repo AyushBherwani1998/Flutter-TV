@@ -10,6 +10,4 @@ ListView Widget | BottomNavigationBar| Column Widget | Row Widget | Other Basic 
 ### 1
 <img src="./Screenshot_20181213-225048.jpg" width="320"/>
 
-### Video
 
-<video autoplay><source src="./20181213_195728_edited.mp4" type="video/mp4"></video>
