@@ -12,4 +12,4 @@ ListView Widget | BottomNavigationBar| Column Widget | Row Widget | Other Basic 
 
 ### Video
 
-<video src="./20181213_195728_edited.mp4" type = "mp4">
+<video autoplay><source src="./20181213_195728_edited.mp4" type="video/mp4"></video>
