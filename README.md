@@ -1,4 +1,6 @@
 # Flutter TV
+The Flutter TV is just a prototype of UI/UX in Flutter with no backend service. You can use the YouTube API to show the trailer/tesars. Happy Hacking!!
+
 ### :heart: Star :heart: the repo to support the project or :smile:[Follow Me](https://github.com/AyushBherwani1998).Thanks!
 
 ### You will learn: 
